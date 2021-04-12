@@ -1,0 +1,27 @@
+{
+  "name": "application-desktop-brief---cnss-ep.1",
+  "version": "1.0.0",
+  "description": "Application desktop pour la Caisse Nationale de Sécurité Sociale {electron Js}.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Idoufkir/Application-Desktop-Brief---CNSS-Ep.1.git"
+  },
+  "keywords": [
+    "Electron",
+    "Js",
+    "NodeJs"
+  ],
+  "author": "Ayoub MOUSTAHFID | Mustafa IDOUFKIR | Ibrahim MOUISSI .",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Idoufkir/Application-Desktop-Brief---CNSS-Ep.1/issues"
+  },
+  "homepage": "https://github.com/Idoufkir/Application-Desktop-Brief---CNSS-Ep.1#readme",
+  "devDependencies": {
+    "electron": "^12.0.2"
+  }
+}
