@@ -28,14 +28,15 @@ const createEmployee = async (req, res) => {
         saveEmployee
     })
 
+    let to = req.body.email
     let subject = "Account Vérification";
     let text = "CNSS Maroc"
     let output = `
     <h2>This is  Your Registration Number  and Password , Keep it Safe !!!</h2>
-    <p> Registration Number : ${req.body.password}</p>
-    <p> Password : ${req.body.phone}</p>`
+    <p> Registration Number : ${req.body.phone}</p>
+    <p> Password : ${req.body.password}</p>`
 
-    sendMail(req.body.email, subject, text, output)
+    sendMail(to, subject, text, output)
    }catch(err){
        console.log(err);
    }
@@ -77,17 +78,15 @@ const signin = (req, res) => {
 }
 
 
-const allEmployee = (req, res) => {
-    let employee = Employee.findAll()
+const allEmployee = async (req, res) => {
+    let employee = await Employee.findAll()
 
     if(!employee){
         return res.status(404).json({
             error: 'Employee not found !!'
         })
     }
-    res.json({
-        employee
-    })
+    res.send(employee)
 }
 
 const emloyeeById = (req, res) =>{

@@ -21,7 +21,7 @@ async function sendMail(email,subject,text,output) {
       });
   
       let info = await transporter.sendMail({
-        from: "CNSS",
+        from: process.env.EMAIL,
         to: email,
         subject: subject,
         text: text,
