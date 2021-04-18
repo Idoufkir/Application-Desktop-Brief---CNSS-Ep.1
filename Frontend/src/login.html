@@ -168,7 +168,7 @@
             }
             toastr.success('Admin is logged !!')
             document.getElementById('formAdmin').reset();
-            render("home.html");
+            window.location.replace("home.html");
             console.log(res.data);
           }).catch(err => console.log(err))
 
