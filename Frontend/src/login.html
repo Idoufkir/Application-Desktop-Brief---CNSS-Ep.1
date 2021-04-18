@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>CNSS</title>
+    <!--<base href="/Portail_cnss/">-->
+    <base href=".">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+    <app-root _nghost-c0="" ng-version="7.0.2">
+        <router-outlet _ngcontent-c0=""></router-outlet>
+        <app-static-layout _nghost-c1="">
+            <div _ngcontent-c1="" class="accueil" id="body-container">
+                <div _ngcontent-c1="" class="body w-100 b">
+                    <div _ngcontent-c1="" class="d-flex h-100 w-100 flex-column " style="min-height: 100vh;">
+                        <header _ngcontent-c1="" class="masthead mb-auto">
+                            <nav _ngcontent-c1="" class="navbar navbar-expand-lg navbar-light" id="mainNav">
+                                <div _ngcontent-c1="" class="container header-container"><a _ngcontent-c1=""
+                                        routerlink=""><img _ngcontent-c1="" alt="..." class="logo"
+                                            src="./image/icon.png" style="height: 100px;"></a><button _ngcontent-c1=""
+                                        aria-controls="navbarResponsive" aria-label="Toggle navigation"
+                                        class="navbar-toggler navbar-toggler-right btn-toggler"
+                                        data-target="#navbarResponsive" mmdata-toggle="collapse" type="button"
+                                        aria-expanded="false"><span _ngcontent-c1=""
+                                            class="navbar-toggler-icon"></span></button>
+                                </div>
+                            </nav>
+                        </header>
+                        <main _ngcontent-c1="" class="inner cover" role="main">
+                            <div _ngcontent-c1="" class="cover-heading">
+                                <div _ngcontent-c1="" class="container zone">
+                                    <router-outlet _ngcontent-c1=""></router-outlet>
+                                    <app-home _nghost-c2="">
+                                        <div _ngcontent-c2="" class="container-acc">
+                                            <div _ngcontent-c2="" class="row">
+                                                <div _ngcontent-c2="" class="col-md-6">
+                                                    <div _ngcontent-c2="" class="custom-home">
+                                                        <div _ngcontent-c2="" class="text-center">
+                                                            <h3 _ngcontent-c2=""
+                                                                class="h-t text-center text-white text-uppercase">
+                                                                Bienvenue sur le portail Assuré de la CNSS</h3>
+                                                            <p _ngcontent-c2="" class="blockquote text-white">La
+                                                                connexion à votre espace privé, vous donne un accès
+                                                                sécurisé à une panoplie de services en ligne. Suivez
+                                                                votre protection sociale en toute simplicité.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div _ngcontent-c2="" class="col-md-6">
+                                                    <div _ngcontent-c2="" class="card" style="margin-bottom: 20px;">
+                                                        <div _ngcontent-c2="" class="card-header">
+                                                            <h3 _ngcontent-c2="" class="text-uppercase card-title">Accès
+                                                                sécurisé</h3>
+                                                        </div>
+                                                        <div _ngcontent-c2="" class="bg-light">
+                                                            <div _ngcontent-c2="" class="card-body p-4">
+                                                                <form _ngcontent-c2="" novalidate=""
+                                                                    class="ng-untouched ng-pristine ng-invalid" id="formAdmin">
+                                                                    <div _ngcontent-c2="" class="form-group"><input
+                                                                            _ngcontent-c2=""
+                                                                            class="form-control input-lg ng-untouched ng-pristine ng-invalid"
+                                                                            name="email" mask="000000000"
+                                                                            id="email"
+                                                                            type="text"
+                                                                            placeholder="E-mail / Admin">
+                                                                        <!---->
+                                                                    </div>
+                                                                    <div _ngcontent-c2="" class="form-group"><input
+                                                                            _ngcontent-c2=""
+                                                                            class="form-control input-lg ng-untouched ng-pristine ng-invalid"
+                                                                            name="password" type="password"
+                                                                            id="password"
+                                                                            placeholder="Mot de passe">
+                                                                        <!---->
+                                                                    </div>
+                                                                    <div _ngcontent-c2="" class="form-group">
+                                                                        <!---->
+                                                                    </div>
+                                                                    <div _ngcontent-c2=""
+                                                                        class="form-group list-action"><button
+                                                                            _ngcontent-c2=""
+                                                                            class="btn btn-lg bgc-green2 text-uppercase text-white btn-block-sm-down"
+                                                                            type="submit" onclick="loginAdmin()">
+                                                                            <!----> Accéder
+                                                                        </button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </app-home>
+                                </div>
+                            </div>
+                        </main>
+                        <footer _ngcontent-c1="" class="mastfoot mt-auto">
+                            <div _ngcontent-c1="" class="inner">
+                                <div _ngcontent-c1="" class="my-footer">
+                                    <div _ngcontent-c1="" class="container">
+                                        <div _ngcontent-c1="" class="row">
+                                            <div _ngcontent-c1="" class="col-lg-6 text-rtl-left ">
+                                                <p _ngcontent-c1="" class="copyright">© CNSS 2021 tous droits réservés
+                                                </p>
+                                            </div>
+                                            <div _ngcontent-c1="" class="col-lg-6 text-rtl-right">
+                                                <ul _ngcontent-c1="" class="list-inline footer-container">
+                                                    <!---->
+                                                    <!---->
+                                                    <li _ngcontent-c1="" class="list-inline-item"><a
+                                                            _ngcontent-c1=""></a>
+                                                        Conditions d'utilisation </a></li>
+                                                    <!---->
+                                                    <li _ngcontent-c1="" class="list-inline-item dlm">/</li>
+                                                    <!---->
+                                                    <!---->
+                                                    <li _ngcontent-c1="" class="list-inline-item"><a _ngcontent-c1="">
+                                                            Mentions légales </a></li>
+                                                    <!---->
+                                                    <li _ngcontent-c1="" class="list-inline-item dlm">/</li>
+                                                    <!---->
+                                                    <!---->
+                                                    <li _ngcontent-c1="" class="list-inline-item"><a _ngcontent-c1="">
+                                                            Contact </a></li>
+                                                    <!---->
+                                                    <!---->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </app-static-layout>
+    </app-root>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="build/toastr.min.js"></script>
+<script>
+
+     //  Create Employee use method POST in axios
+
+        function loginAdmin() {
+
+
+            const email = document.getElementById('email').value;
+            const pass = document.getElementById('password').value;
+
+            axios.post('http://localhost:3000/api/admin/login', {
+            email: email,
+            password : pass
+        }).then(res => {
+            if (res.error) {
+              console.log(err.data);
+            }
+            toastr.success('Admin is logged !!')
+            document.getElementById('formAdmin').reset();
+            render("home.html");
+            console.log(res.data);
+          }).catch(err => console.log(err))
+
+        }
+
+</script>
+
+</body>
+
+</html>

@@ -353,7 +353,7 @@
 
       // Random Code 
       async function getPassword() {
-        var chars = "bhzebbzhebbhzbehkfh9398BFJHFBHEFBZ28123°1°2°1°3123°21312_&hkbadhkadzdéè&é&éè";
+        var chars = "ACBDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
         var passwordLength = 6;
         var password = "";
@@ -417,7 +417,7 @@
         const dateNaissance = document.getElementById('dateNaissance').value
         const phone = document.getElementById('phone').value
 
-        axios.post('http://localhost:8000/api/employee/create', {
+        axios.post('http://localhost:3000/api/employee/create', {
             name : name,
             email: email,
             cin: cin,
@@ -437,7 +437,7 @@
 
       // get All Employee use GET axios
          function getAllEmployee() {
-          axios.get('http://localhost:8000/api/employee/allEmployee')
+          axios.get('http://localhost:3000/api/employee/allEmployee')
            .then(res => {
             const showData = document.getElementById('tbody')
             console.log(res.data.employee)
