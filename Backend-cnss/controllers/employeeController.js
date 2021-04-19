@@ -89,18 +89,21 @@ const allEmployee = async (req, res) => {
     res.send(employee)
 }
 
-const emloyeeById = (req, res) =>{
-    let employee = Employee.findOne({where: {id:req.param.id}})
+const emloyeeById = async (req,res) =>{
 
-    if(!employee){
-        return res.status(404).json({
-            error: 'Id Employee not found !'
+
+    let employee = await Employee.findOne({ where: {id: req.params.userId} })
+
+    if (!employee) {
+        error.push('employee note found')
+        return res.json({
+                error : error
         })
     }
+    console.log(employee);
 
-    res.json({
-        employee
-    })
+    res.send(employee)
+
 }
 
 
